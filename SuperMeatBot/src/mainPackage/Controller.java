@@ -1,15 +1,20 @@
+package mainPackage;
+import java.awt.AWTException;
 import java.awt.Color;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
 import javax.swing.JFrame;
 
+import robot.MyRobot;
+
 public class Controller extends JFrame implements KeyListener{
 	
-	MyRobot myRobot = new MyRobot();
+	MyRobot myRobot = new MyRobot(); 
 	Panneau pan = new Panneau();
 
-	public Controller(){
+	public Controller(){	
+		
 		this.setSize(300, 200);
 		this.setTitle("Controller");
 		this.setLocationRelativeTo(null);
